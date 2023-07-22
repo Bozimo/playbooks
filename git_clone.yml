@@ -1,0 +1,14 @@
+---
+- name: cloning repo
+  hosts: webserver
+  gather_facts: no
+  vars_files:
+          - vault2.yml
+
+  tasks:
+          - name: cloning repo
+            git:
+                    repo: https://bozimo:{{git_password}}@github.com/bozimo/vaultest.git
+                    dest: /home/ansadmin/vaulttest
+
+ 
