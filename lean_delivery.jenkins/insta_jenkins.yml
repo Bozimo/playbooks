@@ -1,0 +1,9 @@
+---
+- name: playbook to install jenkins
+  hosts: webserver
+  become: true
+  gather_facts: yes
+
+  roles:
+          - setup_jenkins
+

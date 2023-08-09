@@ -1,0 +1,12 @@
+---
+- name: testing yaml play
+  hosts: webserver
+  become: true
+  gather_facts: no
+  tasks:
+          - name: ping my hosts
+            ansible.builtin.ping:
+
+          - name: print message
+            ansible.builtin.debug:
+                    msg: hello worldly people i think that now needs to change to somehting else

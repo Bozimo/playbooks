@@ -1,0 +1,8 @@
+[webserver]
+rhelserver ansible_host=10.0.0.6
+
+[ungrouped]
+localhost ansible_connection=local
+
+[jenkins]
+10.0.0.4
